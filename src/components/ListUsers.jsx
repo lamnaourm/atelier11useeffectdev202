@@ -7,7 +7,7 @@ function ListUsers({users}) {
       <h1>Nombre d'utilisateurs : {users.length}</h1>
       {
         users.map(u => 
-          <User user={u} />
+          <User key={u.id} user={u} />
           )
       }
     </div>
